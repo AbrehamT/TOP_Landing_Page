@@ -6,9 +6,11 @@ body{
 
 .content-one{
     display: flex;
+    flex: 1;
     flex-direction: column;
     background-color: #3b3532;
     padding: 0 100px;
+    padding-bottom: 100px;
     color: white;
 }
 .header{
@@ -25,21 +27,47 @@ body{
     gap: 20px;
     flex: 1;
 }
-
+ul{
+    list-style-type: none;
+}
 .container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .header-img{
-    width: auto;
-    height: 50vw;
-    overflow: clip;
+    width: 1000px;
+    height: auto;
+    flex-shrink: 2;
 }
+
 .intro{
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+    flex-shrink: 1;
 }
-ul{
-    list-style-type: none;
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+img{
+    max-height: 100%;    
+    max-width: 100%;
+}
+
+
+
+
+.content-two{
+    display: flex;
+    
+}
+
+.character{
+    height: 100px;
 }
